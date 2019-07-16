@@ -1,0 +1,27 @@
+body    {
+    background-image: url('giffy_app_background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* may need to use background-posotion: 100%; */
+}
+
+.title  {
+    border-width: 200px;;
+    text-align: center;
+}
+/* adjust h1,2,3 */
+/* adjust search bar and button */
+/* get a generic logo that can translate across the page and back when clicked on */
+
+.searchBar  {
+    height: 20px;
+    position: absolute;
+    left: 200px;
+
+}
+
+.searchButton  {
+    background-color: red;
+    height: 20px;
+    width: 50px;
+}
