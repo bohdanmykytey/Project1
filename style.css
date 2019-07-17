@@ -13,6 +13,14 @@ body    {
 /* adjust search bar and button */
 /* get a generic logo that can translate across the page and back when clicked on */
 
+h1  {
+    font-size: 50px;
+}
+
+h3  {
+    font-size: 50px;
+}
+
 .searchBar  {
     height: 20px;
     position: absolute;
