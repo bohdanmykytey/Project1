@@ -2,10 +2,10 @@ $(() => {
     const handleData = (data) =>    {
         for(let i = 0; i < data.data.length; i++)  {
             const $gif = $('<img>').attr('src', data.data[i].images.original.url)
-            $('ul').append($gif)//append $gif to the parent ul
+            $('.parent').append($gif)//append $gif to the parent ul
         }
     }
-    $('.searchButton').on('click', (event) =>  {//making on click event to tie button and search bar into returned results
+    $('form').on('submit', (event) =>  {//making on click event to tie button and search bar into returned results
         event.preventDefault()//stop the page from reloading when not nessesary
         const gifQuery = $('.searchBar').val() //capturing value form input
         console.log(gifQuery)
@@ -13,7 +13,9 @@ $(() => {
         $.ajax({url: endpoint}).then(handleData) //making the ajax call get data asynchronously, when the data gets back, handle it
     })
     $('.clearButton').on('click', () => {
-        $('ul').empty()//clear button works BUT it makes the code no longer responcive once its clicked
+        $('.parent').empty()//clear button works BUT it makes the code no longer responcive once its clicked
     })
+    //MODAL//
+    
     
 }) 

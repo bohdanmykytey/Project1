@@ -2,20 +2,21 @@ body    {
     background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png');
     background-repeat: repeat;
     background-size: 100%;
-    /* may need to use background-posotion: 100%; */
 }
 
-.giphyLogo  {
-    width: 105px;
+.logo {
+    width: 294px;
+    height: 63px;
+    position: absolute;
+    top: 85px;
+    left: 85px;
+    z-index: 1;
 }
 
 .title  {
     border-width: 200px;;
     text-align: center;
 }
-/* adjust h1,2,3 */
-/* adjust search bar and button */
-/* get a generic logo that can translate across the page and back when clicked on */
 
 h1  {
     font-size: 40px;
@@ -32,6 +33,18 @@ h4  {
     font-size: 20px;
 }
 
+h1:hover  {
+    color: silver;
+}
+
+h2:hover  {
+    color: silver;
+}
+
+h4:hover  {
+    color: silver;
+}
+
 .searchBar  {
     height: 20px;
     margin-left: 125px;
@@ -42,6 +55,10 @@ h4  {
     box-shadow: 5px;
 }
 
+.searchBar:hover    {
+    border-color: silver;
+}
+
 .searchButton, 
 .clearButton {
     background-color: red;
@@ -49,6 +66,11 @@ h4  {
     cursor: pointer;
     width: 60px;
     height: 20px;
+    margin: 5px;
+}
+
+.bothButtons    {
+    display: flex;
 }
 
 .searchButton:hover {
@@ -60,7 +82,6 @@ h4  {
     width: 100px;
 }
 
-
 .parent {
     margin: 0 auto;
     text-align: center;
@@ -69,6 +90,12 @@ h4  {
 img     {
     width: 300px;
     height: 168px;
-    margin-left: 3px;
+    margin-left: 4px;
 }
 
+img:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+/* MODAL */
