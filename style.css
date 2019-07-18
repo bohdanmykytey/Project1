@@ -5,6 +5,10 @@ body    {
     /* may need to use background-posotion: 100%; */
 }
 
+.giphyLogo  {
+    width: 105px;
+}
+
 .title  {
     border-width: 200px;;
     text-align: center;
@@ -14,26 +18,48 @@ body    {
 /* get a generic logo that can translate across the page and back when clicked on */
 
 h1  {
-    font-size: 50px;
+    font-size: 40px;
+    color: red;
 }
 
-h3  {
-    font-size: 50px;
+h2 {
+    font-size: 35px;
+    color: red;
+}
+
+h4  {
+    color: red;
+    font-size: 20px;
 }
 
 .searchBar  {
     height: 20px;
-    position: absolute;
-    left: 200px;
-
+    margin-left: 125px;
+    width: 200px;
+    height: 18px;
+    border: 1px solid red;
+    margin-right: 20px;
+    box-shadow: 5px;
 }
 
 .searchButton, 
 .clearButton {
     background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 60px;
     height: 20px;
-    width: 50px;
 }
+
+.searchButton:hover {
+    background-color: silver;
+    width: 100px;
+}
+.clearButton:hover    {
+    background-color: silver;
+    width: 100px;
+}
+
 
 .parent {
     margin: 0 auto;
