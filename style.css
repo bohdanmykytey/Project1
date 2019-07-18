@@ -5,12 +5,11 @@ body    {
 }
 
 .logo {
-    width: 294px;
-    height: 63px;
+    width: 230px;
+    height: 45px;
     position: absolute;
-    top: 85px;
-    left: 85px;
-    z-index: 1;
+    animation: move 4s infinite;
+    padding-left: 20px; 
 }
 
 .title  {
@@ -98,4 +97,11 @@ img:hover {
     cursor: pointer;
 }
 
+@keyframes move {
+    0% {left: 0px;}
+    25% {left: 200px;}
+    50% {left: 0px;}
+    75% {left: 200px;}
+    100% {left: 0px;}
+}
 /* MODAL */
