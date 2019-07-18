@@ -1,6 +1,6 @@
 body    {
-    background-image: url('giffy_app_background.jpg');
-    background-repeat: no-repeat;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png');
+    background-repeat: repeat;
     background-size: 100%;
     /* may need to use background-posotion: 100%; */
 }
@@ -28,17 +28,21 @@ h3  {
 
 }
 
-.searchButton  {
+.searchButton, 
+.clearButton {
     background-color: red;
     height: 20px;
     width: 50px;
 }
 
 .parent {
-    padding: 3px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 img     {
     width: 300px;
     height: 168px;
+    margin-left: 3px;
 }
+
