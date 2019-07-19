@@ -16,9 +16,16 @@ $(() => {
         $('.parent').empty()//clear button works BUT it makes the code no longer responcive once its clicked
     })
     //MODAL//
-    $gif.on('click', () =>  {
-        $gif.addClass('.modal');
-        console.log("image clicked")
+
+    
+    $('img').on('click', () =>  {
+        $("").addClass('.openModal');
+        console.log('image clicked')
+    })
+
+    $('window').on('click', () =>   {
+        $('img').addClass('.closeModal');
+        console.log('window clicked')
     })
     
 }) 
