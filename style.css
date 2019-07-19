@@ -5,16 +5,22 @@ body    {
 }
 
 .logo {
-    width: 230px;
-    height: 45px;
+    width: 200px;
+    height: 40px;
     position: absolute;
-    animation: move 4s infinite;
-    padding-left: 20px; 
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    left: 100px; 
+    top: 100px;
 }
 
 .title  {
-    border-width: 200px;;
+    border: 2px solid silver;;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: monaco,Consolas,Lucida Console,monospace; 
 }
 
 h1  {
@@ -51,6 +57,7 @@ h4:hover  {
     height: 18px;
     border: 1px solid red;
     margin-right: 20px;
+    margin-top: 20px;
     box-shadow: 5px;
 }
 
@@ -69,7 +76,7 @@ h4:hover  {
 }
 
 .bothButtons    {
-    display: flex;
+    display: inline-flex;
 }
 
 .searchButton:hover {
@@ -79,6 +86,10 @@ h4:hover  {
 .clearButton:hover    {
     background-color: silver;
     width: 100px;
+}
+
+.clearButton    {
+    margin-top: 20px;
 }
 
 .parent {
@@ -97,11 +108,36 @@ img:hover {
     cursor: pointer;
 }
 
-@keyframes move {
-    0% {left: 0px;}
-    25% {left: 200px;}
-    50% {left: 0px;}
-    75% {left: 200px;}
-    100% {left: 0px;}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
+
 /* MODAL */
+
+.modal  {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0.0.0,.5);
+}
+
+.closeModal {
+    display: none;
+}
+/* .modal-content  {
+    //need to insert the selected gif into here
+} */
+
+/* possibly add a class close? 
+it should close when clicked outside of the modal */
