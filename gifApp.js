@@ -3,6 +3,7 @@ $(() => {
         for(let i = 0; i < data.data.length; i++)  {
             const $gif = $('<img>').attr('src', data.data[i].images.original.url)
             $('.parent').append($gif)//append $gif to the parent ul
+            
         }
     }
     $('form').on('submit', (event) =>  {//making on click event to tie button and search bar into returned results
@@ -18,14 +19,24 @@ $(() => {
     //MODAL//
 
     
-    $('img').on('click', () =>  {
-        $("").addClass('.openModal');
-        console.log('image clicked')
+    $('.parent').on('click', 'img', (event) =>  {
+        const $imageTag = $('<img>')
+        $imageTag.attr('src', $(event.target).attr('src'))
+        $('#modalContent').append($imageTag)
+        $('#modal').css('display', 'block')
+        
+        console.log('image clicked', event.target.id)
     })
 
-    $('window').on('click', () =>   {
-        $('img').addClass('.closeModal');
-        console.log('window clicked')
-    })
+
+
+
+
+
+
+    // $('window').on('click', () =>   {
+    //     $('img').addClass('.close');
+    //     console.log('window clicked') 
+    // })
     
 }) 
