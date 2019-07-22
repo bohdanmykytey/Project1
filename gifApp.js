@@ -16,8 +16,6 @@ $(() => {
     $('.clearButton').on('click', () => {
         $('.parent').empty()//clear button works BUT it makes the code no longer responcive once its clicked
     })
-    //MODAL//
-
     
     $('.parent').on('click', 'img', (event) =>  {
         const $imageTag = $('<img>').addClass("modalGif")
